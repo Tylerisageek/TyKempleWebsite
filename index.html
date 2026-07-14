@@ -20,15 +20,13 @@
         <h1>Ty Kemple</h1>
     </header>
 
-    
-    <div id="particleContainer"></div>
-
     <div class="content">
+        <div id="particleContainer"></div>
         <div class="left">
             <ul class="selector">
                 <li id="abtmeBtn">About Me</li>
                 <li id="resBtn">Resume</li>
-                <li id="prjBtn">Projects</li>
+                <li id="prjBtn">Software</li>
                 <li id="thtrBtn">Theater</li>
             </ul>
             <div class="contactContainer">
@@ -36,7 +34,7 @@
                     <img class="contactbox" src="Photos/linkedinicon.png" alt="LinkedIn">
                 </a>
                 <a href="https://github.com/Tylerisageek" target="_blank">
-                    <img class="contactbox" src="Photos/github.png" alt="github">
+                    <img class="contactbox" src="Photos/github.png" alt="github" style="scale: 170%">
                 </a>
             </div>
         </div>
@@ -105,6 +103,10 @@
                 </div>
             </div>
             <div class="container" id="prjContainer" style="display:none">
+                <div class="project" id="pdfmergerBtn">
+                    <h4 id="FoCT">PDF Merger</h2>
+                    <img src="Photos/pdfmerger.png" class="prjPic">
+                </div>
                 <div class="project" id="catinBtn">
                     <h4 id="FoCT">Frontiers of Catin &#40;Catan clone&#41;</h2>
                     <img src="Photos/catin.jpg" class="prjPic">
@@ -125,6 +127,10 @@
                 </div>
             </div>
             <div class="container" id="thtrContainer" style="display:none">
+                <div class="project" id="frankBtn">
+                    <h4 id="FoCT">Frankenstein</h2>
+                    <img src="Photos/frank/frankbanner.jpg" class="prjPic">
+                </div>
                 <div class="project" id="blitheBtn">
                     <h4 id="FoCT">Blithe Spirit</h2>
                     <img src="Photos/blithe/blithebanner.JPG" class="prjPic">
@@ -137,6 +143,12 @@
                     <h4 id="FoCT">Midsummer Night's Dream</h4>
                     <img src="Photos/midsummer/midsummerbanner.JPG" class="prjPic" style="object-position: 0px -75px;">
                 </div>
+            </div>
+
+            <div class="container descriptionPage" id="pdfmergerContainer" style="display:none">
+                <img src="Photos/pdfmerger.png" class="descImg">
+                <a href="https://github.com/Tylerisageek/PDF-Merger" target="_blank">
+                </a>
             </div>
 
             <div class="container descriptionPage" id="catinContainer" style="display:none">
@@ -180,15 +192,48 @@
                 </p>
             </div>
 
+            <div class="container descriptionPage" id="frankContainer" style="display:none;">
+                <h3>Frankenstein by Nick Dear</h3>
+                <p> 
+                    Produced by UW UTS.
+                </p>
+                <div class="photoRow">
+                    <!-- First Photo Column -->
+                    <!-- First Photo column contains crew information-->
+                    <div class="photoColumn">
+
+                        <div class="picContainer">
+                            <p>
+                                By: Nick Dear <br>
+                                Director: Ryan St. Martin <br>
+                                Assistant Director:  <br>
+                                Stage Manager: Beckett Lange <br>
+                                Scenic Design: Ty Kemple <br>
+                                Costume Design: Lawrence Wolfe <br>
+                                Lighting Design:  <br>
+                                Sound Design: Lark Peterson <br>
+                                Prop Design: Rome Drewery <br>
+                                Photography: Leah 
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Second Photo Column -->
+                    <div class="photoColumn">
+                        
+                    </div>
+
+                    <!-- Third Photo Column -->
+                    <div class="photoColumn">
+                        
+                    </div>
+                </div>
+            </div>
+
             <div class="container descriptionPage" id="blitheContainer" style="display:none;">
                 <h3>Blithe Spirit by Noel Coward</h3>
                 <p> 
-                    Blithe Spirit is a show that is near and dear to my heart in that
-                    it was the script that made me fall in love with the art of words.
-                    I have wanted to direct this show for as long as I have been in theater,
-                    and I was given the opportunity to do so in the winter of 2024.
-                    The show was stunning, a life changing adventure, and the most fulfilling
-                    and quietly powerful experience of my life.
+                    Produced by UW UTS.
                 </p>
                 <div class="photoRow">
                     <!-- First Photo Column -->
@@ -270,7 +315,7 @@
             <div class="container descriptionPage" id="macbeezyContainer" style="display:none;">
                 <h3>Macbeth by William Shakespeare</h3>
                 <p> 
-                    UW UTS production of Macbeth!
+                    Produced by UW UTS.
                 </p>
 
                 <div class="photoRow">
@@ -343,7 +388,9 @@
 
             <div class="container descriptionPage" id="midsummerContainer" style="display:none">
                 <h3>A Midsummer Night's Dream by William Shakespeare</h3>
-                <p> UW UTS production of Midsummer Night's Dream!</p>
+                
+                <p>Produced by UW UTS.</p>
+                
                 <div class="photoRow">
                     <!-- First Photo Column -->
                     <!-- Contains Crew Information -->
