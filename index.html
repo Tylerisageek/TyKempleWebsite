@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Ty Kemple</title>
+    <link rel="icon" href="Photos/tabcomputer.png">
+    <link href="styles.css" rel="stylesheet">
+    <script src="indexMaster.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fenix&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <div id="preloader"></div>
+
+    <header class>
+        <h1>Ty Kemple</h1>
+    </header>
+
+    
+    <div id="particleContainer"></div>
+
+    <div class="content">
+        <div class="left">
+            <ul class="selector">
+                <li id="abtmeBtn">About Me</li>
+                <li id="resBtn">Resume</li>
+                <li id="prjBtn">Projects</li>
+                <li id="thtrBtn">Theater</li>
+            </ul>
+            <div class="contactContainer">
+                <a href="https://www.linkedin.com/in/ty-kemple" target="_blank">
+                    <img class="contactbox" src="Photos/linkedinicon.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Tylerisageek" target="_blank">
+                    <img class="contactbox" src="Photos/github.png" alt="github">
+                </a>
+            </div>
+        </div>
+
+        <div class="vertical-divider"></div>
+        
+        <div class="right">
+            <div class="container" id="abtmeContainer" style="display:grid">
+                <div class="abtmeleft">
+                    <!--<img src="Photos/zipline.JPEG" style="height:60vh;">-->
+                </div>
+                <div class="abtmeright">
+                    <h3> Hi, I'm Ty. </h3>
+                    <p> 
+                        I am a software developer, web designer, university student, team builder, musician, thespian<br>
+                        You'll find a bit of everything here. Enjoy your stay!
+                    </p>
+                </div>
+            </div>
+            <div class="container" id="resContainer" style="display:none">
+                <div class="job">
+                    <div>
+                        <h4>Barista</h4>
+                        <h5>Mercury's Coffee ~ 06.25 - Present</h5>
+                    </div>
+                    <ul>
+                        <li>Customer service position in a fast paced high-volume environment requiring quick thinking, adaptability and accountability for mistakes in order to maintain service standards.</li> 
+                        <li>Serves 30,000 customers a week and processes 2,500 transactions daily.</li>
+                        <li>Working with 35+ coworkers to facilitate one of the busiest coffee shops/bakeries in the state.</li>
+                    </p>
+                </div>
+                <div class="job">
+                    <div>
+                        <h4>Resident Advisor</h4>
+                        <h5>UW Housing and Food Services ~ 08.23 - 12.24</h5>
+                    </div>
+                    <ul>
+                        <li>Collaborate with faculty and facilities teams to maintain a clean and safe environment for 400+ residents</li>
+                        <li>Mentor residents, facilitate conflict resolution, and provide access to campus resources</li>
+                        <li>Plan, coordinate, and manage 2+ building-wide social events per month</li>
+                        <li>Manage inventory, write program and project proposals, and calendar maintenance</li> 
+                    </p>
+                </div>
+                <div class="job">
+                    <div>
+                        <h4>Doordash Driver</h4>
+                        <h5>DoorDash LLC ~ 01.23 - present</h5>
+                    </div>
+                    <ul>
+                        <li>Navigate large urban areas efficiently to ensure timely and accurate food deliveries</li>
+                        <li>Resolve order issues and handle challenging customer interactions with professionalism</li>
+                        <li>Adapt to high-pressure environments, including rush hour traffic and unexpected delays, while maintaining customer satisfaction</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <div>
+                        <h4>Bobarista</h4>
+                        <h5>Bocopop LLC ~ 06.23 - 08.23</h5>
+                    </div>
+            
+                    <ul>
+                        <li>Delivered high-quality customer service in a fast-paced, high-volume environment</li>
+                        <li>Quickly learned and mastered preparation of a wide variety of beverages and menu items</li>
+                        <li>Demonstrated adaptability and accountability by promptly identifying and correcting mistakes to maintain service standards</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" id="prjContainer" style="display:none">
+                <div class="project" id="catinBtn">
+                    <h4 id="FoCT">Frontiers of Catin &#40;Catan clone&#41;</h2>
+                    <img src="Photos/catin.jpg" class="prjPic">
+                </div>
+                <!--
+                <div class="project" id="wsBtn">
+                    <h4 id="FoCT">Personal Webpage Portfolio</h2>
+                    <img src="Photos/webpage.png" class="prjPic">
+                </div>
+                -->
+                <div class="project" id="vmBtn">
+                    <h4 id="FoCT">Visual Music</h2>
+                    <img src="Photos/visualmusic.png" class="prjPic">
+                </div>
+                <div class="project" id="ndBtn">
+                    <h4 id="FoCT">No Deception</h2>
+                    <img src="Photos/nodeception.png" class="prjPic">
+                </div>
+            </div>
+            <div class="container" id="thtrContainer" style="display:none">
+                <div class="project" id="blitheBtn">
+                    <h4 id="FoCT">Blithe Spirit</h2>
+                    <img src="Photos/blithe/blithebanner.JPG" class="prjPic">
+                </div>
+                <div class="project" id="macbeezyBtn">
+                    <h4 id="FoCT">Macbeth</h2>
+                    <img src="Photos/macbeth/macbeezybanner.jpg" class="prjPic" style="object-position: 0px -100px;">
+                </div>
+                <div class="project" id="midsummerBtn">
+                    <h4 id="FoCT">Midsummer Night's Dream</h4>
+                    <img src="Photos/midsummer/midsummerbanner.JPG" class="prjPic" style="object-position: 0px -75px;">
+                </div>
+            </div>
+
+            <div class="container descriptionPage" id="catinContainer" style="display:none">
+                <img src="Photos/catin.jpg" class="descImg">
+                <a href="https://github.com/Tylerisageek/FrontiersOfCatin" target="_blank">
+                    GitHub Repository
+                </a>
+                <p>Frontiers of Catin is a Settlers of Catan clone made using Pygame for the GUI and Python for the backend logic. 
+                    It features local multiplayer for up to 4 players!
+                </p>
+            </div>
+            <!-- This is currently hidden because I have the button commented out -->
+            <div class="container descriptionPage" id="wsContainer" style="display:none">
+                <p>
+                    This is my personal webpage portfolio, made with HTML, CSS, and JavaScript. 
+                    It is a work in progress, but it is functional!
+                </p>
+            </div>
+            <div class="container descriptionPage" id="vmContainer" style="display:none">
+                <img src="Photos/visualmusic.png" class="descImg">
+                <p>
+                    A react based program that was built in with the use of AI LLM Claude. 
+                    Required extensive time learning how to leverage an LLM, as well as how to best 
+                    resolve coding discrepancies introduced by AI or others. 
+                    It is used to create 3D visuals to match up with audio or music.
+                </p>
+                <a href="https://youtu.be/ngzJCTXE95w" target="_blank">
+                    Link to demo video
+                </a>
+            </div>
+            <div class="container descriptionPage" id="ndContainer" style="display:none">
+                <img src="Photos/nodeception.png" class="descImg">
+                <img src="Photos/ndexample.png" class="descImg" style="margin-top: 3px; margin-bottom: 1vh;">
+                <a href="https://github.com/gycobden/No-Deception" target="_blank">
+                    GitHub Repository
+                </a>
+                <p>
+                    A full-stack program that integrates LLM API calls along with a MongoDB database of scientific articles to 
+                    help users determine if a claim in the media is true or false, then gives a user more articles to further 
+                    their research about the topic.
+                </p>
+            </div>
+
+            <div class="container descriptionPage" id="blitheContainer" style="display:none;">
+                <h3>Blithe Spirit by Noel Coward</h3>
+                <p> 
+                    Blithe Spirit is a show that is near and dear to my heart in that
+                    it was the script that made me fall in love with the art of words.
+                    I have wanted to direct this show for as long as I have been in theater,
+                    and I was given the opportunity to do so in the winter of 2024.
+                    The show was stunning, a life changing adventure, and the most fulfilling
+                    and quietly powerful experience of my life.
+                </p>
+                <div class="photoRow">
+                    <!-- First Photo Column -->
+                    <!-- First Photo column contains crew information-->
+                    <div class="photoColumn">
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/blithe/Blithe_Spirit_Poster.png" class="thtrPic">
+                        </div>
+                        
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/blithe/blithefireplace.JPG" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p>
+                                By: Noel Coward <br>
+                                Director: Ty Kemple <br>
+                                Stage Manager: Jessica Nero, Matea Houle <br>
+                                Scenic Design: Ryan St. Martin, Ty Kemple <br>
+                                Costume Design: Connor Zamora, Ella Avital <br>
+                                Lighting Design: Lilia Peartree <br>
+                                Sound Design: Lark Peterson <br>
+                                Prop Design: Rome Drewery <br>
+                                Photography: Lark Peterson
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Second Photo Column -->
+                    <div class="photoColumn">
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/blithe/blithechallengersbanner.JPG" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <video controls class="thtrPic">
+                                <source src="Photos/blithe/blitheresurrect.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/blithe/blithesplit.JPG" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/blithe/blitheseance.JPG" class="thtrPic">
+                        </div>
+                    </div>
+
+                    <!-- Third Photo Column -->
+                    <div class="photoColumn">
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/blithe/blitheruth.JPG" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/blithe/blithefaint.JPG" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <video controls class="thtrPic">
+                                <source src="Photos/blithe/blithenonsense.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container descriptionPage" id="macbeezyContainer" style="display:none;">
+                <h3>Macbeth by William Shakespeare</h3>
+                <p> 
+                    UW UTS production of Macbeth!
+                </p>
+
+                <div class="photoRow">
+                    <!-- First Photo Column -->
+                    <!-- Contains Crew Information -->
+                    <div class="photoColumn">
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/macbeth/macbeezybanner.jpg" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/macbeth/macbeezyryan.jpg" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p>
+                                By: William Shakespeare <br>
+                                Director: Ella Avital <br>
+                                Stage Manager: Jessica Nero, Matea Houle <br>
+                                Scenic Design: Ty Kemple <br>
+                                Costume Design: Jayda Fitch <br>
+                                Lighting Design: Lilia Peartree <br>
+                                Sound Design: Conor Flannigan <br>
+                                Prop Design: Rome Drewery <br>
+                                Dramaturgy: Andres Kou, Maurice
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Second Photo Column -->
+                    <div class="photoColumn">
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/macbeth/macbeezyconfrontation.jpg" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/macbeth/macbeezyfight.jpg" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/macbeth/macbeezycheers.jpg" class="thtrPic">
+                        </div>
+                    </div>
+
+                    <!-- Third Photo Column -->
+                    <div class="photoColumn">
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/macbeth/macbeezymrs.jpg" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/macbeth/macbeezywitches.jpg" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/macbeth/macbeezypunk.jpg" class="thtrPic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container descriptionPage" id="midsummerContainer" style="display:none">
+                <h3>A Midsummer Night's Dream by William Shakespeare</h3>
+                <p> UW UTS production of Midsummer Night's Dream!</p>
+                <div class="photoRow">
+                    <!-- First Photo Column -->
+                    <!-- Contains Crew Information -->
+                    <div class="photoColumn">
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/midsummer/midsummerkick.JPG" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/midsummer/midsummerconstruction.JPG" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <img src="Photos/midsummer/midsummerset.jpg" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p>
+                                By: William Shakespeare <br>
+                                Director: Connor Zamora <br>
+                                Stage Manager: Jada <br>
+                                Scenic Design: Ty Kemple <br>
+                                Costume Design: Jayda Fitch <br>
+                                Lighting Design: Kamden <br>
+                                Sound Design: Lark Peterson <br>
+                                Prop Design: Rome Drewery
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Second Photo Column -->
+                    <div class="photoColumn">
+
+                        <div class="picContainer">
+                            <video controls class="thtrPic">
+                                <source src="Photos/midsummer/midsummervalerie.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="picContainer">
+                            <img src="Photos/midsummer/midsummercast.jpg" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/midsummer/midsummerlovers.JPG" class="thtrPic">
+                        </div>
+                    </div>
+
+                    <!-- Third Photo Column -->
+                    <div class="photoColumn">
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/midsummer/midsummerhorse.JPG" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <p class="FoCT">@larkpetersonphotography</p>
+                            <img src="Photos/midsummer/midsummergang.JPG" class="thtrPic">
+                        </div>
+
+                        <div class="picContainer">
+                            <img src="Photos/midsummer/midsummerdeconstruct.jpg" class="thtrPic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h5>© 2025 Ty Kemple <span>Particle Design modified from Justin Windle's 30,000 Particles</span></h5> 
+    </footer>
+
+    </body>
+</html>
