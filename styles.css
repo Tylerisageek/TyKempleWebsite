@@ -90,7 +90,7 @@ h5 {
 }
 .selector {
     list-style-type: none;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 15px;
     font-size: 24px;
 }
 .selector li {
@@ -101,13 +101,12 @@ h5 {
     grid-template-columns: 130px 2px auto;
     border: 2px solid black;
     margin: 0px auto;
-    padding: 2px;
     height: 90vh;
     width: 95vw;
     position: relative;
 }
 .contactContainer {
-    padding: 0px 40px 0px 10px;
+    padding: 0px 40px 0px 15px;
 }
 .contactbox {
     width: 30px;
@@ -243,6 +242,14 @@ h5 {
     padding: 0 4px;
 }
 
+.r3column img,
+.l3column img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .thtrPic {
     width: 100%;
     vertical-align: middle;
@@ -284,4 +291,76 @@ img[data-src] {
 
 img.lazy-loaded {
   opacity: 1;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.team_grid {
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.team_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team_card img {
+    margin: 10px;
+    max-width: 150px;
+    max-height: auto;
+}
+
+.l3column {
+    display: grid;
+    grid-template-columns: 30vw auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+.r3column {
+    display: grid;
+    grid-template-columns: auto 30vw;
+    gap: 1rem;
+    align-items: center;
+}
+
+#walkthroughImgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 0.75rem;
+    width: auto;
+}
+
+#walkthroughImgs img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid var(--accent-soft);
+    box-shadow: var(--shadow);
+}
+
+.imgwcap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    text-align: center;
+    font-style: italic;
+}
+
+#netizenContainer p{
+    font-size: 1.5rem;
+}
+
+#netizenContainer h4{
+    font-size: 1.7rem;
+    margin: 0 0 0.7rem;
+    color: var(--accent);
 }

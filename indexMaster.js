@@ -16,7 +16,8 @@
       //'ws',
       'vm',
       'nd',
-      'pdfmerger'
+      'pdfmerger',
+      'netizen'
     ];
   
     function init() {
