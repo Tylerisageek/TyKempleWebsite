@@ -21,8 +21,26 @@
     ];
   
     function init() {
+      initPreloader();
       btnsInit();
       particles();
+    };
+
+    const initPreloader = () => {
+      const loader = document.getElementById('preloader');
+      if (!loader) return;
+
+      const hideLoader = () => {
+        loader.classList.add('hidden');
+      };
+
+      window.addEventListener('load', hideLoader, { once: true });
+
+      setTimeout(() => {
+        if (!loader.classList.contains('hidden')) {
+          hideLoader();
+        }
+      }, 1800);
     };
     
     // Creates the event listeners for any button that changes what page is displayed
@@ -48,7 +66,7 @@
     // Particle background animation, adapted from 30,000 Particles by Justin Windle
     const particles = () => {
   var THICKNESS = Math.pow(180, 2),
-    SPACING = 3,
+    SPACING = 5,
     TMARGIN = 0,
     BMARGIN = 0,
     LMARGIN = 0,

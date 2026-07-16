@@ -4,9 +4,10 @@
 
   <head>
     <title>Ty Kemple</title>
-    <link rel="icon" href="Photos/tabcomputer.png">
-    <link href="styles.css" rel="stylesheet">
-    <script src="indexMaster.js"></script>
+    <link rel="icon" href="WEBP/tabcomputer.webp">
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="lazyLoader.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Fenix&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +15,10 @@
 
   <body>
 
-    <div id="preloader"></div>
+    <div id="preloader" aria-live="polite" aria-label="Loading site content">
+      <div class="preloader-ring" aria-hidden="true"></div>
+      <p>Loading Ty Kemple</p>
+    </div>
 
     <header class>
         <h1>Ty Kemple</h1>
@@ -31,10 +35,10 @@
             </ul>
             <div class="contactContainer">
                 <a href="https://www.linkedin.com/in/ty-kemple" target="_blank">
-                    <img class="contactbox" src="Photos/linkedinicon.png" alt="LinkedIn">
+                    <img class="contactbox" data-src="WEBP/linkedinicon.webp" alt="LinkedIn">
                 </a>
                 <a href="https://github.com/Tylerisageek" target="_blank">
-                    <img class="contactbox" src="Photos/github.png" alt="github" style="scale: 170%">
+                    <img class="contactbox" data-src="WEBP/github.webp" alt="github" style="scale: 170%">
                 </a>
             </div>
         </div>
@@ -44,7 +48,7 @@
         <div class="right">
             <div class="container" id="abtmeContainer" style="display:grid">
                 <div class="abtmeleft">
-                    <!--<img src="Photos/zipline.JPEG" style="height:60vh;">-->
+                    <!--<img src="WEBP/zipline.webp" style="height:60vh;">-->
                 </div>
                 <div class="abtmeright">
                     <h3> Hi, I'm Ty. </h3>
@@ -105,59 +109,59 @@
             <div class="container" id="prjContainer" style="display:none">
                 <div class="project" id="pdfmergerBtn">
                     <h4 id="FoCT">PDF Merger</h2>
-                    <img src="Photos/pdfmerger.png" class="prjPic">
+                    <img data-src="WEBP/pdfmerger.webp" class="prjPic">
                 </div>
                 <div class="project" id="catinBtn">
                     <h4 id="FoCT">Frontiers of Catin &#40;Catan clone&#41;</h2>
-                    <img src="Photos/catin.jpg" class="prjPic">
+                    <img data-src="WEBP/catin.webp" class="prjPic">
                 </div>
                 <!--
                 <div class="project" id="wsBtn">
                     <h4 id="FoCT">Personal Webpage Portfolio</h2>
-                    <img src="Photos/webpage.png" class="prjPic">
+                    <img data-src="WEBP/webpage.webp" class="prjPic">
                 </div>
                 -->
                 <div class="project" id="vmBtn">
                     <h4 id="FoCT">Visual Music</h2>
-                    <img src="Photos/visualmusic.png" class="prjPic">
+                    <img data-src="WEBP/visualmusic.webp" class="prjPic">
                 </div>
                 <div class="project" id="ndBtn">
                     <h4 id="FoCT">No Deception</h2>
-                    <img src="Photos/nodeception.png" class="prjPic">
+                    <img data-src="WEBP/nodeception.webp" class="prjPic">
                 </div>
                 <div class="project" id="netizenBtn">
                     <h4 id="FoCT">Netizen</h2>
-                    <img src="Photos/netizen.WEBP" class="prjPic">
+                    <img data-src="WEBP/netizen.webp" class="prjPic">
                 </div>
             </div>
             <div class="container" id="thtrContainer" style="display:none">
                 <div class="project" id="frankBtn">
                     <h4 id="FoCT">Frankenstein</h2>
-                    <img src="Photos/frank/frankbanner.jpg" class="prjPic">
+                    <img data-src="WEBP/frank/frankbanner.webp" class="prjPic">
                 </div>
                 <div class="project" id="blitheBtn">
                     <h4 id="FoCT">Blithe Spirit</h2>
-                    <img src="Photos/blithe/blithebanner.JPG" class="prjPic">
+                    <img data-src="WEBP/blithe/blithebanner.webp" class="prjPic">
                 </div>
                 <div class="project" id="macbeezyBtn">
                     <h4 id="FoCT">Macbeth</h2>
-                    <img src="Photos/macbeth/macbeezybanner.jpg" class="prjPic" style="object-position: 0px -100px;">
+                    <img data-src="WEBP/macbeth/macbeezybanner.webp" class="prjPic" style="object-position: 0px -100px;">
                 </div>
                 <div class="project" id="midsummerBtn">
                     <h4 id="FoCT">Midsummer Night's Dream</h4>
-                    <img src="Photos/midsummer/midsummerbanner.JPG" class="prjPic" style="object-position: 0px -75px;">
+                    <img data-src="WEBP/midsummer/midsummerbanner.webp" class="prjPic" style="object-position: 0px -75px;">
                 </div>
             </div>
 
             <div class="container descriptionPage" id="pdfmergerContainer" style="display:none">
-                <img src="Photos/pdfmerger.png" class="descImg">
+                <img data-src="WEBP/pdfmerger.webp" class="descImg">
                 <a href="https://github.com/Tylerisageek/PDF-Merger" target="_blank">
                 </a>
                 <p> This is a python program that gives a GUI to merge PDF files.</p>
             </div>
 
             <div class="container descriptionPage" id="catinContainer" style="display:none">
-                <img src="Photos/catin.jpg" class="descImg">
+                <img data-src="WEBP/catin.webp" class="descImg">
                 <a href="https://github.com/Tylerisageek/FrontiersOfCatin" target="_blank">
                     GitHub Repository
                 </a>
@@ -173,7 +177,7 @@
                 </p>
             </div>
             <div class="container descriptionPage" id="vmContainer" style="display:none">
-                <img src="Photos/visualmusic.png" class="descImg">
+                <img data-src="WEBP/visualmusic.webp" class="descImg">
                 <p>
                     A react based program that was built in with the use of AI LLM Claude. 
                     Required extensive time learning how to leverage an LLM, as well as how to best 
@@ -185,8 +189,8 @@
                 </a>
             </div>
             <div class="container descriptionPage" id="ndContainer" style="display:none">
-                <img src="Photos/nodeception.png" class="descImg">
-                <img src="Photos/ndexample.png" class="descImg" style="margin-top: 3px; margin-bottom: 1vh;">
+                <img data-src="WEBP/nodeception.webp" class="descImg">
+                <img data-src="WEBP/ndexample.webp" class="descImg" style="margin-top: 3px; margin-bottom: 1vh;">
                 <a href="https://github.com/gycobden/No-Deception" target="_blank">
                     GitHub Repository
                 </a>
@@ -205,23 +209,23 @@
                         <h2>Team</h2>
                         <div class="team_grid flexrow">
                             <div class="team_card">
-                                <img src="Photos/netizen/dawson2.jpeg" alt="Dawson Harris">
+                                <img data-src="WEBP/netizen/dawson2.webp" alt="Dawson Harris">
                                 <span>Dawson Harris</span>
                             </div>
                             <div class="team_card">
-                                <img src="Photos/netizen/ty.jpg" alt="Ty Kemple">
+                                <img data-src="WEBP/netizen/ty.webp" alt="Ty Kemple">
                                 <span>Ty Kemple</span>
                             </div>
                             <div class="team_card">
-                                <img src="Photos/netizen/iman.jpg" alt="Iman Nilforoush">
+                                <img data-src="WEBP/netizen/iman.webp" alt="Iman Nilforoush">
                                 <span>Iman Nilforoush</span>
                             </div>
                             <div class="team_card">
-                                <img src="Photos/netizen/weizhe.png" alt="Weizhe Sun">
+                                <img data-src="WEBP/netizen/weizhe.webp" alt="Weizhe Sun">
                                 <span>Weizhe Sun</span>
                             </div>
                             <div class="team_card">
-                                <img src="Photos/netizen/mason.jpg" alt="Mason Tepper">
+                                <img data-src="WEBP/netizen/mason.webp" alt="Mason Tepper">
                                 <span>Mason Tepper</span>
                             </div>
                         </div>
@@ -244,7 +248,7 @@
                     </p>
 
                     <div class="imgwcap">
-                        <img src="Photos/netizen/netizen_welcome.png" alt="Netizen friends list. A list of all of your friends, whether they are online, what game they are playing, and either how long they have been playing the game or how long they have been offline." width={400} height={400} />
+                        <img data-src="WEBP/netizen/netizen_welcome.webp" alt="Netizen friends list. A list of all of your friends, whether they are online, what game they are playing, and either how long they have been playing the game or how long they have been offline." width={400} height={400} />
                         <p> The friends list screen shows which of your friends are online and what they are currently doing. </p>
                     </div>
                 </div>
@@ -272,9 +276,9 @@
                     </p>
 
                     <div>
-                        <img src="Photos/netizen/friendList.png" alt="Main screen on the Netizen display. Showcases the user's friends list." width={400} height={400} />
+                        <img data-src="WEBP/netizen/friendList.webp" alt="Main screen on the Netizen display. Showcases the user's friends list." width={400} height={400} />
                         <div class="imgwcap">
-                            <img src="Photos/netizen/friendProfilePage.png" alt="The friends profile provide information such as friends information, game history, highlighted memories, and connected accounts." width={400} height={400} />
+                            <img data-src="WEBP/netizen/friendProfilePage.webp" alt="The friends profile provide information such as friends information, game history, highlighted memories, and connected accounts." width={400} height={400} />
                         <p> From the home screen, you can open a friend's profile, review your shared history, and decide what details you want to exchange to rebuild the connection.</p>
                         </div>
                     </div>
@@ -293,10 +297,10 @@
                 </p>
 
                 <div class="flexrow" id="walkthroughImgs">
-                    <img src="Photos/netizen/netizenOverview.png" alt="Netizen screen showing a friend's profile. The profile shows the friend's information, game history, highlighted memories, and connected accounts."/>
-                    <img src="Photos/netizen/walkthrough2step2.png" alt="Netizen screen showing a friend's profile. The profile shows the friend's information, game history, highlighted memories, and connected accounts." />
-                    <img src="Photos/netizen/history.png" alt="Netizen screen showing the Game History, memories, and shared statistics with an online friend."/>
-                    <img src="Photos/netizen/memories.png" alt="Netizen screen showing all the memories made with an online friend."/>
+                    <img data-src="WEBP/netizen/netizenOverview.webp" alt="Netizen screen showing a friend's profile. The profile shows the friend's information, game history, highlighted memories, and connected accounts."/>
+                    <img data-src="WEBP/netizen/walkthrough2step2.webp" alt="Netizen screen showing a friend's profile. The profile shows the friend's information, game history, highlighted memories, and connected accounts." />
+                    <img data-src="WEBP/netizen/history.webp" alt="Netizen screen showing the Game History, memories, and shared statistics with an online friend."/>
+                    <img data-src="WEBP/netizen/memories.webp" alt="Netizen screen showing all the memories made with an online friend."/>
                 </div>
                 <p>Connecting other social and gaming accounts allows you to see a list of all of your online friends. Clicking on a profile shows you information about the friend and memories from your shared in-game experiences.</p>
 
@@ -351,11 +355,11 @@
                 <div class="l3column">
                     <div>
                         <div class="imgwcap">
-                            <img src="Photos/netizen/initDesign1.png" alt="Overview sketch from original sketching that showcased a friends profile, the information shown, and an early version of the QR code system to access other connected accounts." width={400} height={400} />
+                            <img data-src="WEBP/netizen/initDesign1.webp" alt="Overview sketch from original sketching that showcased a friends profile, the information shown, and an early version of the QR code system to access other connected accounts." width={400} height={400} />
                             <p>Overview sketch from original sketching that showcased a friends profile, the information shown, and an early version of the QR code system to access other connected accounts.</p>
                         </div>
                         <div class="imgwcap">
-                            <img src="Photos/netizen/initDesign2.png" alt="Netizen screen showing a friend's profile. Screen is now much more organized with less content and more buttons to see additional information." width={400} height={400} />
+                            <img data-src="WEBP/netizen/initDesign2.webp" alt="Netizen screen showing a friend's profile. Screen is now much more organized with less content and more buttons to see additional information." width={400} height={400} />
                             <p>Netizen screen showing a friend's profile. Screen is now much more organized with less content and more buttons to see additional information.</p>
                         </div> 
                     </div>
@@ -431,7 +435,7 @@
                     </p>
 
                     <div class="imgwcap"> 
-                        <img src="Photos/netizen/documentation.png" alt="The documentation page of Netizen, showing different sections including Overview, Setup, Profile, Manage Friendship, Game History, Memories, Connected Accounts, and Voice Commands." width={400} height={400} />
+                        <img data-src="WEBP/netizen/documentation.webp" alt="The documentation page of Netizen, showing different sections including Overview, Setup, Profile, Manage Friendship, Game History, Memories, Connected Accounts, and Voice Commands." width={400} height={400} />
                         <p>The documentation helps users to know the basic functions of Netizen and shows how to use Netizen.</p>
                     </div>
                 </div>
@@ -455,9 +459,9 @@
                     </p>
                     
                     <div>
-                        <img src="Photos/netizen/profilePrototype.jpg" alt="The previous handwritten design of profile page of Netizen, showing profile name, icon, button of Profile Changes, button of Manage Friendship, favorite games, highlighted memories with a list of video memories, button of Game History, and button of connected accounts." width={400} height={400} />
+                        <img data-src="WEBP/netizen/profilePrototype.webp" alt="The previous handwritten design of profile page of Netizen, showing profile name, icon, button of Profile Changes, button of Manage Friendship, favorite games, highlighted memories with a list of video memories, button of Game History, and button of connected accounts." width={400} height={400} />
                         <div class="imgwcap">
-                            <img src="Photos/netizen/friendProfilePage.png" alt="The new digital design of profile page of Netizen, showing profile name, icon, button of Profile Changes, button
+                            <img data-src="WEBP/netizen/friendProfilePage.webp" alt="The new digital design of profile page of Netizen, showing profile name, icon, button of Profile Changes, button
                             of Manage Friendship, favorite games, highlighted memories with a list of video memories, button of Game History, and button of connected accounts." width={400} height={400} />
                             <p>Iterated from unclear handwritten profile design to digital profile design with a clearer layout to help users understand the functions.</p>
                         </div>
@@ -469,11 +473,11 @@
                 <div class="l3column">
                     <div>
                         <div class="imgwcap">
-                        <img src="Photos/netizen/MutualFriendship.png" alt="Original sketch of a 'mutual friendship' concept." width={400} height={400} />
+                        <img data-src="WEBP/netizen/MutualFriendship.webp" alt="Original sketch of a 'mutual friendship' concept." width={400} height={400} />
                         <p>Early concept that showed a mutual-path system where users defined how close they felt to someone, and the final level was only set when both users agreed.</p>
                         </div>
                         <div class="imgwcap">
-                            <img src="Photos/netizen/manageFriendshipSetting.png" alt="Netizen page that shows Default Infomation Sharing Settings page, where users can modify their defualt sharing settings." width={400} height={400} />
+                            <img data-src="WEBP/netizen/manageFriendshipSetting.webp" alt="Netizen page that shows Default Infomation Sharing Settings page, where users can modify their defualt sharing settings." width={400} height={400} />
                             <p>Page of default Information Sharing Settings allows users choose their own preferences of the data they want to share with friends in different Tiers.</p>
                         </div>
                     </div>
@@ -546,12 +550,12 @@
                     <div class="photoColumn">
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/blithe/Blithe_Spirit_Poster.png" class="thtrPic">
+                            <img data-src="WEBP/blithe/Blithe_Spirit_Poster.webp" class="thtrPic">
                         </div>
                         
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/blithe/blithefireplace.JPG" class="thtrPic">
+                            <img data-src="WEBP/blithe/blithefireplace.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
@@ -573,7 +577,7 @@
                     <div class="photoColumn">
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/blithe/blithechallengersbanner.JPG" class="thtrPic">
+                            <img data-src="WEBP/blithe/blithechallengersbanner.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
@@ -585,12 +589,12 @@
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/blithe/blithesplit.JPG" class="thtrPic">
+                            <img data-src="WEBP/blithe/blithesplit.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/blithe/blitheseance.JPG" class="thtrPic">
+                            <img data-src="WEBP/blithe/blitheseance.webp" class="thtrPic">
                         </div>
                     </div>
 
@@ -599,12 +603,12 @@
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/blithe/blitheruth.JPG" class="thtrPic">
+                            <img data-src="WEBP/blithe/blitheruth.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/blithe/blithefaint.JPG" class="thtrPic">
+                            <img data-src="WEBP/blithe/blithefaint.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
@@ -629,12 +633,12 @@
                     <div class="photoColumn">
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/macbeth/macbeezybanner.jpg" class="thtrPic">
+                            <img data-src="WEBP/macbeth/macbeezybanner.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/macbeth/macbeezyryan.jpg" class="thtrPic">
+                            <img data-src="WEBP/macbeth/macbeezyryan.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
@@ -656,17 +660,17 @@
                     <div class="photoColumn">
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/macbeth/macbeezyconfrontation.jpg" class="thtrPic">
+                            <img data-src="WEBP/macbeth/macbeezyconfrontation.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/macbeth/macbeezyfight.jpg" class="thtrPic">
+                            <img src="WEBP/macbeth/macbeezyfight.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/macbeth/macbeezycheers.jpg" class="thtrPic">
+                            <img data-src="WEBP/macbeth/macbeezycheers.webp" class="thtrPic">
                         </div>
                     </div>
 
@@ -675,17 +679,17 @@
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/macbeth/macbeezymrs.jpg" class="thtrPic">
+                            <img data-src="WEBP/macbeth/macbeezymrs.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/macbeth/macbeezywitches.jpg" class="thtrPic">
+                            <img data-src="WEBP/macbeth/macbeezywitches.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/macbeth/macbeezypunk.jpg" class="thtrPic">
+                            <img data-src="WEBP/macbeth/macbeezypunk.webp" class="thtrPic">
                         </div>
                     </div>
                 </div>
@@ -702,16 +706,16 @@
                     <div class="photoColumn">
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/midsummer/midsummerkick.JPG" class="thtrPic">
+                            <img data-src="WEBP/midsummer/midsummerkick.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/midsummer/midsummerconstruction.JPG" class="thtrPic">
+                            <img data-src="WEBP/midsummer/midsummerconstruction.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
-                            <img src="Photos/midsummer/midsummerset.jpg" class="thtrPic">
+                            <img data-src="WEBP/midsummer/midsummerset.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
@@ -739,12 +743,12 @@
                         </div>
 
                         <div class="picContainer">
-                            <img src="Photos/midsummer/midsummercast.jpg" class="thtrPic">
+                            <img data-src="WEBP/midsummer/midsummercast.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/midsummer/midsummerlovers.JPG" class="thtrPic">
+                            <img data-src="WEBP/midsummer/midsummerlovers.webp" class="thtrPic">
                         </div>
                     </div>
 
@@ -753,16 +757,16 @@
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/midsummer/midsummerhorse.JPG" class="thtrPic">
+                            <img data-src="WEBP/midsummer/midsummerhorse.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
                             <p class="FoCT">@larkpetersonphotography</p>
-                            <img src="Photos/midsummer/midsummergang.JPG" class="thtrPic">
+                            <img data-src="WEBP/midsummer/midsummergang.webp" class="thtrPic">
                         </div>
 
                         <div class="picContainer">
-                            <img src="Photos/midsummer/midsummerdeconstruct.jpg" class="thtrPic">
+                            <img data-src="WEBP/midsummer/midsummerdeconstruct.webp" class="thtrPic">
                         </div>
                     </div>
                 </div>
